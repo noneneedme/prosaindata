@@ -28,5 +28,5 @@ for i, tweet in tqdm(enumerate(scraper.get_items()), total=n_tweets):
         break
 tweet_df=pd.DataFrame(tweets, columns=['@Username','Tweet', 'Lokasi']
             )
-#tweet_df.to_csv('Tsandiuno.csv', index=False)
+tweet_df.to_csv('Tsandiuno.csv', index=False)
 

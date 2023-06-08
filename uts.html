@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import Dataset &#8212; My sample book</title>
+    <title>UTS &#8212; My sample book</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'uts';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Import Dataset" href="PSD.html" />
+    <link rel="prev" title="UTS PSD" href="PSD.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,28 +155,11 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="PSD.html">Import Dataset</a></li>
-
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Import Dataset</a></li>
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="detik.html">Detik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crapganjar.html">Scrap Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jurnalPTA.html">Jurnal PTA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PSD.html">UTS PSD</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UTS</a></li>
 </ul>
 
     </div>
@@ -391,7 +374,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Import Dataset</h1>
+    <h1>UTS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -401,19 +384,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Import Dataset</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-dataset">Import Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -424,8 +406,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="import-dataset">
-<h1>Import Dataset<a class="headerlink" href="#import-dataset" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="uts">
+<h1>UTS<a class="headerlink" href="#uts" title="Permalink to this heading">#</a></h1>
+<div class="section" id="import-dataset">
+<h2>Import Dataset<a class="headerlink" href="#import-dataset" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -504,7 +488,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="case-folding">
-<h1>Case Folding<a class="headerlink" href="#case-folding" title="Permalink to this heading">#</a></h1>
+<h2>Case Folding<a class="headerlink" href="#case-folding" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lower_case_abstrak</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -667,7 +651,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="cleansing">
-<h1>Cleansing<a class="headerlink" href="#cleansing" title="Permalink to this heading">#</a></h1>
+<h2>Cleansing<a class="headerlink" href="#cleansing" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cleaning</span>
@@ -840,7 +824,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="deteksi-kata-tidak-baku-slank-words">
-<h1>Deteksi kata tidak baku (Slank Words)<a class="headerlink" href="#deteksi-kata-tidak-baku-slank-words" title="Permalink to this heading">#</a></h1>
+<h2>Deteksi kata tidak baku (Slank Words)<a class="headerlink" href="#deteksi-kata-tidak-baku-slank-words" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -1039,7 +1023,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="steaming">
-<h1>Steaming<a class="headerlink" href="#steaming" title="Permalink to this heading">#</a></h1>
+<h2>Steaming<a class="headerlink" href="#steaming" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">Sastrawi</span>
@@ -1224,7 +1208,7 @@ Requirement already satisfied: Sastrawi in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="section" id="tokenizing-dan-stop-words">
-<h1>Tokenizing dan Stop Words<a class="headerlink" href="#tokenizing-dan-stop-words" title="Permalink to this heading">#</a></h1>
+<h2>Tokenizing dan Stop Words<a class="headerlink" href="#tokenizing-dan-stop-words" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2229,7 +2213,7 @@ Requirement already satisfied: Sastrawi in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="section" id="tf-idf">
-<h1>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h1>
+<h2>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TfidfVectorizer </span>
@@ -3053,7 +3037,7 @@ Requirement already satisfied: Sastrawi in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="section" id="pca">
-<h1>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h1>
+<h2>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -3457,7 +3441,7 @@ Requirement already satisfied: Sastrawi in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="section" id="splitting-data">
-<h1>Splitting Data<a class="headerlink" href="#splitting-data" title="Permalink to this heading">#</a></h1>
+<h2>Splitting Data<a class="headerlink" href="#splitting-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -3469,7 +3453,7 @@ Requirement already satisfied: Sastrawi in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="section" id="pemodelan-knn">
-<h1>Pemodelan KNN<a class="headerlink" href="#pemodelan-knn" title="Permalink to this heading">#</a></h1>
+<h2>Pemodelan KNN<a class="headerlink" href="#pemodelan-knn" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
@@ -3569,7 +3553,7 @@ weighted avg       0.84      0.84      0.84       161
 </div>
 </div>
 <div class="section" id="pemodelan-naive-bayes">
-<h1>Pemodelan Naive Bayes<a class="headerlink" href="#pemodelan-naive-bayes" title="Permalink to this heading">#</a></h1>
+<h2>Pemodelan Naive Bayes<a class="headerlink" href="#pemodelan-naive-bayes" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Model Select</span>
@@ -3657,6 +3641,7 @@ weighted avg       0.83      0.81      0.82       161
 </div>
 </div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -3695,7 +3680,7 @@ weighted avg       0.83      0.81      0.82       161
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Import Dataset</p>
+        <p class="prev-next-title">UTS PSD</p>
       </div>
     </a>
 </div></div>
@@ -3716,19 +3701,18 @@ weighted avg       0.83      0.81      0.82       161
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Import Dataset</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-dataset">Import Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

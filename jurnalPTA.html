@@ -795,103 +795,76 @@ ABSTRACT
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://pta.trunojoyo.ac.id/welcome/detail/070411100029
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : BAHRUL ULUM
-RANCANG BANGUN APLIKASI INTRUSION PREVENTION SYSTEM PADA JARINGAN BERBASIS PROTOKOL TCP/IP MENGGUNAKAN SNORT DAN IPTABLES
-Dalam setiap perusahaan tentunya memiliki data penting berkaitan dengan kegiatan bisnis mereka yang perlu dijaga dan diamankan dari orang yang tidak berhak mengaksesnya. Seringkali  muncul aksi ilegal yang mencoba merusak server bahkan sampai mencuri data perusahaan bisa mengakibatkan kesalahan fatal terhadap kelancaran kegiatan bisnis perusahaan disebabkan data yang tidak valid lagi. Menyikapi masalah tersebut, maka diperlukannya sistem monitoring keamanan yang mampu mengamankan server dari tindakan penyusupan. Intrusion Prevention System (IPS) merupakan solusi yang mampu memberikan keamanan pada jaringan server dari tindakan penyusupan. IPS ini mengembangkan Snort sebagai fungsi pendeteksi yang dikombinasikan dengan IPTables Firewall sebagai pencegah adanya penyusupan. IPS ini juga dilengkapi dengan user interface BASE (Basic Analysis and Security Engine)  dan manajemen rule sehingga memudahkan admin untuk memonitor sistem keamanan dari tindakan penyusupan ke jaringan server. Snort akan membuat alert ketika terdeteksi adanya serangan yang disimpan dalam log Snort dan memerintahkan IPTables untuk melakukan drop terhadap alamat penyerang. Kemudian detail serangan bisa dilihat pada tampilan user interface BASE. Dari hasil pengujian, didapatkan bahwa Snort dan IPTables telah bekerja dengan baik menjadi IPS yang mampu memberikan respon secara cepat ketika terdeteksi adanya serangan. Waktu tanggap rata-rata kurang dari 5 detik, dari awal serangan sampai terdeteksinya alert.
-https://pta.trunojoyo.ac.id/welcome/detail/060411100824
-</pre></div>
-</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="nn">&lt;ipython-input-8-bbc0cdf20c2a&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">lengkap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">isi</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">url2</span> <span class="o">=</span> <span class="n">isi</span>
-<span class="ne">---&gt; </span><span class="mi">13</span>     <span class="n">req2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url2</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="n">soup2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req2</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">req2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url2</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">14</span>     <span class="n">soup2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req2</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="n">items2</span> <span class="o">=</span> <span class="n">soup2</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;data-cat&#39;</span> <span class="p">:</span> <span class="s1">&#39;#luxury&#39;</span><span class="p">})</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">items2</span><span class="p">:</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2"> </span>
-<span class="ne">---&gt; </span><span class="mi">75</span><span class="s2">     return request(&#39;get&#39;, url, params=params, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">76</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">77</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/__init__.py</span> in <span class="ni">__init__</span><span class="nt">(self, markup, features, builder, parse_only, from_encoding, exclude_encodings, element_classes, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">331</span>             <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">initialize_soup</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">333</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_feed</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span>                 <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span>                 <span class="k">break</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">request</span><span class="nt">(method, url, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">59</span><span class="s2">     # cases, and look like a memory leak in others.</span>
-<span class="g g-Whitespace">     </span><span class="mi">60</span><span class="s2">     with sessions.Session() as session:</span>
-<span class="ne">---&gt; </span><span class="mi">61</span><span class="s2">         return session.request(method=method, url=url, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">62</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">63</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/__init__.py</span> in <span class="ni">_feed</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">450</span>         <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">451</span> 
+<span class="ne">--&gt; </span><span class="mi">452</span>         <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">markup</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">453</span>         <span class="c1"># Close out any unfinished strings and close all the open tags.</span>
+<span class="g g-Whitespace">    </span><span class="mi">454</span>         <span class="bp">self</span><span class="o">.</span><span class="n">endData</span><span class="p">()</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
-<span class="g g-Whitespace">    </span><span class="mi">527</span><span class="s2">         }</span>
-<span class="g g-Whitespace">    </span><span class="mi">528</span><span class="s2">         send_kwargs.update(settings)</span>
-<span class="ne">--&gt; </span><span class="mi">529</span><span class="s2">         resp = self.send(prep, **send_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">531</span><span class="s2">         return resp</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/builder/_htmlparser.py</span> in <span class="ni">feed</span><span class="nt">(self, markup)</span>
+<span class="g g-Whitespace">    </span><span class="mi">360</span>         <span class="n">parser</span> <span class="o">=</span> <span class="n">BeautifulSoupHTMLParser</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">361</span>         <span class="n">parser</span><span class="o">.</span><span class="n">soup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">soup</span>
+<span class="ne">--&gt; </span><span class="mi">362</span>         <span class="n">parser</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="n">markup</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">363</span>         <span class="n">parser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">364</span>         <span class="n">parser</span><span class="o">.</span><span class="n">already_closed_empty_element</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">send</span><span class="nt">(self, request, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">643</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">644</span><span class="s2">         # Send the request</span>
-<span class="ne">--&gt; </span><span class="mi">645</span><span class="s2">         r = adapter.send(request, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">646</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">647</span><span class="s2">         # Total elapsed time of the request (approximately)</span>
+<span class="nn">/usr/lib/python3.10/html/parser.py</span> in <span class="ni">feed</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">108</span><span class="w">         </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span><span class="sd">         self.rawdata = self.rawdata + data</span>
+<span class="ne">--&gt; </span><span class="mi">110</span><span class="sd">         self.goahead(0)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span><span class="sd">     def close(self):</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/adapters.py</span> in <span class="ni">send</span><span class="nt">(self, request, stream, timeout, verify, cert, proxies)</span>
-<span class="g g-Whitespace">    </span><span class="mi">438</span><span class="s2">         try:</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span><span class="s2">             if not chunked:</span>
-<span class="ne">--&gt; </span><span class="mi">440</span><span class="s2">                 resp = conn.urlopen(</span>
-<span class="g g-Whitespace">    </span><span class="mi">441</span><span class="s2">                     method=request.method,</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span><span class="s2">                     url=url,</span>
+<span class="nn">/usr/lib/python3.10/html/parser.py</span> in <span class="ni">goahead</span><span class="nt">(self, end)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="sd">             if startswith(&#39;&lt;&#39;, i):</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="sd">                 if starttagopen.match(rawdata, i): # &lt; + letter</span>
+<span class="ne">--&gt; </span><span class="mi">170</span><span class="sd">                     k = self.parse_starttag(i)</span>
+<span class="g g-Whitespace">    </span><span class="mi">171</span><span class="sd">                 elif startswith(&quot;&lt;/&quot;, i):</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span><span class="sd">                     k = self.parse_endtag(i)</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">urlopen</span><span class="nt">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">702</span><span class="s2">             # Make the request on the httplib connection object.</span>
-<span class="ne">--&gt; </span><span class="mi">703</span><span class="s2">             httplib_response = self._make_request(</span>
-<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2">                 conn,</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span><span class="s2">                 method,</span>
+<span class="nn">/usr/lib/python3.10/html/parser.py</span> in <span class="ni">parse_starttag</span><span class="nt">(self, i)</span>
+<span class="g g-Whitespace">    </span><span class="mi">342</span><span class="sd">             self.handle_startendtag(tag, attrs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span><span class="sd">         else:</span>
+<span class="ne">--&gt; </span><span class="mi">344</span><span class="sd">             self.handle_starttag(tag, attrs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">345</span><span class="sd">             if tag in self.CDATA_CONTENT_ELEMENTS:</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span><span class="sd">                 self.set_cdata_mode(tag)</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">384</span><span class="s2">         # Trigger any extra validation we need to do.</span>
-<span class="g g-Whitespace">    </span><span class="mi">385</span><span class="s2">         try:</span>
-<span class="ne">--&gt; </span><span class="mi">386</span><span class="s2">             self._validate_conn(conn)</span>
-<span class="g g-Whitespace">    </span><span class="mi">387</span><span class="s2">         except (SocketTimeout, BaseSSLError) as e:</span>
-<span class="g g-Whitespace">    </span><span class="mi">388</span><span class="s2">             # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/builder/_htmlparser.py</span> in <span class="ni">handle_starttag</span><span class="nt">(self, name, attrs, handle_empty_element)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="sd">         #print(&quot;START&quot;, name)</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span><span class="sd">         sourceline, sourcepos = self.getpos()</span>
+<span class="ne">--&gt; </span><span class="mi">120</span><span class="sd">         tag = self.soup.handle_starttag(</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span><span class="sd">             name, None, None, attr_dict, sourceline=sourceline,</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span><span class="sd">             sourcepos=sourcepos</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_validate_conn</span><span class="nt">(self, conn)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1040</span><span class="s2">         # Force connect early to allow us to validate the connection.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span><span class="s2">         if not getattr(conn, &quot;sock&quot;, None):  # AppEngine might not have  `.sock`</span>
-<span class="ne">-&gt; </span><span class="mi">1042</span><span class="s2">             conn.connect()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1043</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span><span class="s2">         if not conn.is_verified:</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/__init__.py</span> in <span class="ni">handle_starttag</span><span class="nt">(self, name, namespace, nsprefix, attrs, sourceline, sourcepos, namespaces)</span>
+<span class="g g-Whitespace">    </span><span class="mi">720</span><span class="sd">             return None</span>
+<span class="g g-Whitespace">    </span><span class="mi">721</span><span class="sd"> </span>
+<span class="ne">--&gt; </span><span class="mi">722</span><span class="sd">         tag = self.element_classes.get(Tag, Tag)(</span>
+<span class="g g-Whitespace">    </span><span class="mi">723</span><span class="sd">             self, self.builder, name, namespace, nsprefix, attrs,</span>
+<span class="g g-Whitespace">    </span><span class="mi">724</span><span class="sd">             self.currentTag, self._most_recent_element,</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">361</span><span class="s2">     def connect(self):</span>
-<span class="g g-Whitespace">    </span><span class="mi">362</span><span class="s2">         # Add certificate verification</span>
-<span class="ne">--&gt; </span><span class="mi">363</span><span class="s2">         self.sock = conn = self._new_conn()</span>
-<span class="g g-Whitespace">    </span><span class="mi">364</span><span class="s2">         hostname = self.host</span>
-<span class="g g-Whitespace">    </span><span class="mi">365</span><span class="s2">         tls_in_tls = False</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">_new_conn</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">172</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">173</span><span class="s2">         try:</span>
-<span class="ne">--&gt; </span><span class="mi">174</span><span class="s2">             conn = connection.create_connection(</span>
-<span class="g g-Whitespace">    </span><span class="mi">175</span><span class="s2">                 (self._dns_host, self.port), self.timeout, **extra_kw</span>
-<span class="g g-Whitespace">    </span><span class="mi">176</span><span class="s2">             )</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address, socket_options)</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span><span class="s2">         )</span>
-<span class="g g-Whitespace">     </span><span class="mi">71</span><span class="s2"> </span>
-<span class="ne">---&gt; </span><span class="mi">72</span><span class="s2">     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span><span class="s2">         af, socktype, proto, canonname, sa = res</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2">         sock = None</span>
-
-<span class="nn">/usr/lib/python3.10/socket.py</span> in <span class="ni">getaddrinfo</span><span class="nt">(host, port, family, type, proto, flags)</span>
-<span class="g g-Whitespace">    </span><span class="mi">953</span><span class="s2">     # and socket type values to enum constants.</span>
-<span class="g g-Whitespace">    </span><span class="mi">954</span><span class="s2">     addrlist = []</span>
-<span class="ne">--&gt; </span><span class="mi">955</span><span class="s2">     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):</span>
-<span class="g g-Whitespace">    </span><span class="mi">956</span><span class="s2">         af, socktype, proto, canonname, sa = res</span>
-<span class="g g-Whitespace">    </span><span class="mi">957</span><span class="s2">         addrlist.append((_intenum_converter(af, AddressFamily),</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/element.py</span> in <span class="ni">__init__</span><span class="nt">(self, parser, builder, name, namespace, prefix, attrs, parent, previous, is_xml, sourceline, sourcepos, can_be_empty_element, cdata_list_attributes, preserve_whitespace_tags, interesting_string_types, namespaces)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1193</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1194</span> 
+<span class="ne">-&gt; </span><span class="mi">1195</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">builder</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1196</span>                  <span class="n">prefix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1197</span>                  <span class="n">is_xml</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sourceline</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sourcepos</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
